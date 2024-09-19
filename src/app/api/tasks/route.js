@@ -14,7 +14,10 @@ export const GET = authenticate(async (req) => {
     return NextResponse.json(tasks);
   } catch (error) {
     return NextResponse.json(
-      { message: "Error fetching tasks", error: error.message },
+      {
+        message: "Error fetching tasks please login again",
+        error: error.message,
+      },
       { status: 500 }
     );
   }
