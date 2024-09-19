@@ -66,13 +66,13 @@ export default function Tasks() {
         const data = await response.json();
         setTasks(data);
       } else {
-        throw new Error("Failed to fetch tasks");
+        throw new Error("Failed to fetch tasks Please try again.");
       }
     } catch (error) {
-      setError("Failed to fetch tasks");
+      setError("Failed to fetch tasks Please try again.");
       toast({
         title: "Error",
-        description: "Failed to fetch tasks. Please try again.",
+        description: "Failed to fetch tasks Please try again.",
         variant: "destructive",
       });
     } finally {

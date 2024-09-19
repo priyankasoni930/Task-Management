@@ -35,13 +35,13 @@ export default function KanbanBoard() {
         const data = await response.json();
         setTasks(data);
       } else {
-        throw new Error("Failed to fetch tasks");
+        throw new Error("Failed to fetch tasks please login again");
       }
     } catch (error) {
-      setError("Failed to fetch tasks");
+      setError("Failed to fetch tasks please login again");
       toast({
         title: "Error",
-        description: "Failed to fetch tasks. Please try again.",
+        description: "Failed to fetch tasks. Please try again or login.",
         variant: "destructive",
       });
     } finally {
