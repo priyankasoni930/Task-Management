@@ -1,13 +1,7 @@
 
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/priyankasoni930/Task-Management.git
 ```
 
 
